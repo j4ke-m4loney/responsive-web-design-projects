@@ -4,20 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Landing Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product-styles.css">
   </head>
   <body>
     <main>
       <header id="header">
-        <img id="header-img" src="https://www.google.com"alt="logo"/>
+        <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"alt="logo"/>
         <nav id="nav-bar">
-          <link class="nav-link" href="#Menu">Menu</linK>
-          <link class="nav-link" href="#Shop">Shop</link>
-          <link class="nav-link" href="#Products">Products</link>
-
+          <ul class="nav-bar-link">
+          <li><a class="nav-link" href="#Menu">Menu</a><li>
+          <li><a class="nav-link" href="#Shop">Shop</a><li>
+          <li><a class="nav-link" href="#Products">Products</a><li>
+          </ul>
           </nav>
-
       </header>
+      <section id="video">
+        <iframe width="420" height="315" id="video"
+        src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0">
+        </iframe>
+        </section>
+        <div>
+          </div>
+        <section class="form-section">
+          <form id="form" action="https://www.freecodecamp.com/email-submit)" method="post">
+            <div>
+              <label for="name"> Enter Your Name:
+                </label>
+              </div>
+              <input type="text" name="name" id="name" placeholder="Name" required>
+              <div>
+                <label for="email"> Enter Your Email:
+                </label>
+                </div>
+              </input>
+              <input type="email" name="email" id="email" placeholder="Email" required>
+              </input>
+              <div>
+              <input type="submit" id="submit" value="Submit">
+              </div>
+            </form>
+          </section>
       <video id="video"></video>
       </main>
   </body>
